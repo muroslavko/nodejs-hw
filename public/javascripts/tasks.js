@@ -103,8 +103,8 @@ function bindEventListeners(){
 						return response.json();
 					} 
 				}).then((task) => {
-					$$tasksContainer.appendChild(renderTask(task));
-					taskContainer.remove();
+					// $$tasksContainer.appendChild(renderTask(task));
+					//taskContainer.remove();
 				}).catch(function(){
 					debugger
 					renderError('when create task');
@@ -119,7 +119,7 @@ function bindEventListeners(){
 					return;
 				} 
 			}).then(function(){
-				taskContainer.remove();
+				//taskContainer.remove();
 			}).catch(function(){
 				renderError('when delete');
 			});
